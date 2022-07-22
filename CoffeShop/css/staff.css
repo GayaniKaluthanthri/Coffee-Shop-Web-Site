@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Poppins:wght@400;700&display=swap');
+
+:root {
+    --primary: #d1c28a;
+    --secondary: #a58e65;
+}
+
+html{
+    user-select: none;
+}
+
+* {
+    /* font-family: 'Courgette', cursive; */
+    font-family: 'Poppins', sans-serif !important;
+    border-radius: 0 !important;
+}
+
+body#staff {
+    background: url('../img/background-1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.menu-card {
+    background-color: #00ffff94;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+}
+
+.x6 {
+    margin-bottom: 60px;
+}
+
+.menu-card .title {
+    margin-left: 10px;
+}
+
+.navbar {
+    background: #00000094;
+}
+
+.nav-link {
+    color: #fff;
+}
+
+.nav-link:hover {
+    color: var(--primary);
+}
+
+.n-item {
+    position: relative;
+    margin-right: 10px;
+}
+
+
+.page-title {
+    color: var(--secondary);
+}
+
+.card-btn {
+    background-color: var(--secondary);
+}
+
+.card-btn:hover {
+    background-color: var(--primary);
+}
+
+.frame {
+    background-color: #00000094;
+    border: 1px solid #888;
+    border-bottom-color: #333;
+    border-right-color: #333;
+    padding: 25px;
+}
+
+.frame input {
+    padding: 4px;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+.frame label {
+    color: var(--primary);
+}
+
+.frame .head-part {
+    display: flex;
+    align-items: center
+}
+
+.frame .head-part span {
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.action-btn {
+    text-decoration: none;
+}
+
+
+.modal-content {
+    background-color: var(--primary);
+}
+
+.checkout-wrap {
+    background-color: #ffffffaf;
+    padding: 25px;
+}
+
+.payment-form {
+    text-align: left;
+}
+
+.text-muted {
+    font-size: 12px;
+}
+
+.x {
+    height: 100px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+footer {
+    background-color: #8f7e60;
+}
+
+.f-sec {
+    min-height: calc(100vh - 150px);
+}
+
+.jumb {
+    min-height: calc(100vh - 150px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.jumb h1 {
+    font-size: 70px;
+    color: var(--secondary);
+    font-family: 'Courgette', cursive !important;
+}
+
+
+.jumb p {
+    color: #8f7e60;
+}
+
+
+.title_bar {
+    width: 600px;
+}
+
+.navbar-brand {
+    color: var(--secondary);
+}
+
+.navbar-brand:hover {
+    color: var(--primary);
+}
+
+.btn-jumb {
+    background-color: var(--secondary);
+    box-shadow: 2px 2px 4px #111;
+}
+
+.btn-jumb:hover {
+    background-color: var(--primary);
+}

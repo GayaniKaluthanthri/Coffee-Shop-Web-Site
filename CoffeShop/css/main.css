@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Poppins:wght@400;700&display=swap');
+
+:root {
+    --primary: #d1c28a;
+    --secondary: #a58e65;
+}
+
+* {
+    /* font-family: 'Courgette', cursive; */
+    font-family: 'Poppins', sans-serif !important;
+    border-radius: 0 !important;
+}
+
+html {
+    user-select: none;
+}
+
+*:focus {
+    box-shadow: none !important;
+}
+
+body#index {
+    background: url('../img/background-2.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.brand-image {
+    width: 70px;
+}
+
+.nav-link {
+    color: #fff;
+    font-size: 20px;
+}
+
+.nav-link:hover {
+    color: var(--primary);
+}
+
+.n-item {
+    position: relative;
+    margin-right: 10px;
+}
+
+.x2 {
+    margin-bottom: 20px;
+}
+
+.x3 {
+    margin-bottom: 30px;
+}
+
+.x6 {
+    margin-bottom: 60px;
+}
+
+.n-item:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--primary);
+    transform-origin: center;
+    transition: transform 0.25s ease;
+}
+
+.n-item:hover:after {
+    transform: scaleX(1);
+    transform-origin: center;
+}
+
+.login-wrap h2 a {
+    color: var(--primary);
+}
+
+.login-wrap h5 {
+    color: var(--secondary);
+}
+
+.login-form input {
+    background-color: #757575;
+}
+
+.jumb {
+    min-height: calc(100vh - 150px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.jumb2 {
+    min-height: calc(100vh - 150px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.jumb h1 {
+    font-size: 70px;
+    color: var(--secondary);
+    font-family: 'Courgette', cursive !important;
+}
+
+.jumb2 h1 {
+    font-size: 50px;
+    color: var(--secondary);
+    font-family: 'Courgette', cursive !important;
+}
+
+.jumb p {
+    color: #8f7e60;
+}
+
+.section-2 {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.section-2 h1 {
+    font-size: 50px;
+    color: var(--secondary);
+}
+
+.section-2 p {
+    color: #8f7e60;
+}
+
+.img_bar {
+    max-width: 400px;
+}
+
+.btn-jumb {
+    background-color: var(--secondary);
+    box-shadow: 2px 2px 4px #111;
+}
+
+.btn-jumb:hover {
+    background-color: var(--primary);
+}
+
+.btn-jumb-1 {
+    color: var(--secondary);
+    border: 1px solid var(--secondary);
+    box-shadow: 2px 2px 4px #111;
+}
+
+.btn-jumb-1:hover {
+    color: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+.title_bar {
+    width: 600px;
+}
+
+img.tables {
+    width: 80%;
+}
+
+#booking {
+    text-align: center;
+}
+
+#booking h2 {
+    color: var(--primary);
+}
+
+#booking h4 {
+    color: var(--secondary);
+}
+
+#booking li,
+p {
+    color: var(--secondary);
+    list-style: none;
+}
+
+.table-card {
+    background-color: #0000008f;
+    box-shadow: 2px 2px 5px #000;
+    border: 1px solid;
+    border-top-color: #aaaaaa;
+    border-left-color: #aaaaaa;
+    border-bottom-color: #424242;
+    border-right-color: #424242;
+}
+
+.table-card:hover {
+    background-color: #000000d2;
+}
+
+img.coffee {
+    width: 100%;
+    padding: 20px;
+    padding-right: 15px;
+}
+
+.list-group .desc {
+    text-align: left;
+}
+
+.count {
+    width: 100%;
+    background-color: var(--secondary);
+    padding: 7px;
+    vertical-align: middle;
+    border: none;
+}
+
+.modal-content {
+    background-color: var(--primary);
+}
+
+.checkout-wrap {
+    background-color: #ffffffaf;
+    padding: 25px;
+}
+
+.payment-form {
+    text-align: left;
+}
+
+.text-muted {
+    font-size: 12px;
+}
+
+.form-label {
+    margin-bottom: 4px;
+    font-size: 14px;
+}
+
+.form-control {
+    padding: 2px 10px;
+    font-size: 14px;
+}
+
+#cart_form {
+    margin-top: 0 !important;
+}
+
+.card-count-btn button {
+    background-color: var(--secondary);
+    border: none;
+    padding: 10px 20px;
+}
+
+.card-count-btn button:hover {
+    background-color: var(--primary);
+}
+
+.card-count-value {
+    color: var(--secondary);
+    font-size: 20px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* auth */
+.auth-wrap {
+    user-select: none;
+    min-height: calc(100vh - 200px);
+    width: 100%;
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.auth-wrap input {
+    padding: 8px;
+    background: #181818b2;
+    color: var(--secondary);
+    border-color: var(--secondary);
+}
+
+.auth-wrap input:focus {
+    padding: 8px;
+    background: #181818b2;
+    color: var(--secondary);
+    border-color: var(--secondary);
+
+}
+
+.auth-wrap .flexCheckDefault {
+    color: var(--secondary);
+}
+
+.auth-wrap .login-wrap,
+.auth-wrap .signup-wrap {
+    max-width: 400px;
+    width: 100%;
+    padding: 10px;
+    background-color: #00000085;
+    box-shadow: 0 0 5px #b9b9b9;
+}
+
+.auth-wrap .login-wrap:hover,
+.auth-wrap .signup-wrap:hover {
+    box-shadow: 0 0 5px #757575;
+}
+
+.auth-wrap .psw-fog {
+    text-align: right;
+}
+
+.auth-wrap .btn-login {
+    background-color: var(--secondary);
+    color: #fff;
+    text-align: center;
+    width: 100%;
+}
+
+.auth-wrap .btn-login:hover {
+    background-color: var(--primary);
+    color: #000;
+}
+
+.auth-wrap .brand-img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.x {
+    height: 100px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+footer {
+    background-color: #8f7e60;
+}
+
+.contact .title {
+    color: var(--primary);
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.contact .sub-title {
+    color: var(--primary);
+    font-size: 25px;
+}
+
+.contact .desc {
+    color: #aaaaaa;
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.contact .icon {
+    margin-bottom: 50px;
+}
+
+.contact .icon .bi {
+    color: var(--secondary);
+    font-size: 28px;
+    margin-right: 20px;
+}
+
+.contact .form-label {
+    color: var(--secondary);
+    font-size: 17px;
+    margin-top: 20px;
+}
+
+.contact textarea {
+    width: 100%;
+}
+
+.contact input[type="submit"] {
+    background-color: var(--primary);
+    border: none;
+    padding: 5px 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 5px black;
+}
+
+.contact input[type="submit"]:hover {
+    background-color: var(--secondary);
+}
